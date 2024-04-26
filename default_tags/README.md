@@ -14,6 +14,7 @@ that is used to manage it.
 ```hcl
 module "tags" {
   source = "github.com/milton-hirsch-institute/terraform-modules-aws/default_tags"
+  prefix = "mhi"
 }
 
 provider "aws" {
