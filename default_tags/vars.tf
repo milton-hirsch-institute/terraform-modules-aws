@@ -5,3 +5,9 @@ variable "prefix" {
   type        = string
   description = "Organization prefix"
 }
+
+variable "tags" {
+  type        = map(string)
+  description = "Additional tags to add to the outputs - takes precedence"
+  default     = {}
+}
